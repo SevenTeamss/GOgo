@@ -21,3 +21,5 @@ Route::get('index','IndexController@Index');
 	Route::get('server','IndexController@Server');
 	//分期购车
 	Route::get('common','IndexController@Common');
+	//首页搜索城市车辆信息
+	Route::get('buyCitySearch','SearchController@CitySearch');

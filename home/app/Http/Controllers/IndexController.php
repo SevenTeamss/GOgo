@@ -12,7 +12,7 @@ use App\Brand;
 /**
  * 瓜子网   首页控制器
  * 版权所有 2016-2017 
- * 网站地址: http://www.guazi.com;
+ * 网站地址: http_date()p://www.guazi.com;
  */
 class IndexController extends Controller
 {
@@ -21,6 +21,13 @@ class IndexController extends Controller
      */
      public function Index()
         {
+            //获取服务器ip地址
+            // $server_ip=$_SERVER['SERVER_ADDR'];
+            // echo $server_ip;die;
+            session_start();
+            $cityname = isset($_SESSION['cityname'])?$_SESSION['cityname']:'';
+            
+            $data['cityname'] = $cityname;
             //查询头部需要的城市信息
             $data['city'] = $this->Header();
             // print_r($data);die;
@@ -64,17 +71,20 @@ class IndexController extends Controller
         //我要卖车
         public function Sell()
         {
-            return view('sell');
+            $arr = $this->Header();
+            return view('sell',['arr'=>$arr]); 
         }
         //服务保障
         public function Server()
         {
-            return view('server');
+            $arr = $this->Header();
+            return view('server',['arr'=>$arr]); 
         }
         //分期购车
         public function Common()
         {
-            return view('common');
+            $arr = $this->Header();
+            return view('common',['arr'=>$arr]); 
         }
          //头部城市数据
         public function Header()

@@ -2,7 +2,7 @@
 <html><head _tracker="{&quot;pagetype&quot;:&quot;index&quot;}"><style type="text/css">object {outline:none;}</style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="renderer" content="webkit">
-<title>【北京个人二手车_北京二手车市场_北京二手车交易】-北京瓜子二手车直卖网</title>
+<title>{{ $arr['cityname'] }}瓜子二手车直卖网</title>
 <meta name="keywords" content="北京二手车,北京二手车交易市场,北京二手车市场">
 <meta name="description" content="北京瓜子二手车直卖网,北京个人二手车交易市场,所有北京二手车经过259项检测,标准无事故,100%个人二手车,14天可退1年质保,瓜子二手车，北京二手车市场全程担保!">
 
