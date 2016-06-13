@@ -14,11 +14,11 @@
     <meta name="shenma-site-verification" content="47174ef55ff6318bd3c48a846b608ee8_1446541131">
     <link rel="shortcut icon" type="image/x-icon" href="http://www.guazi.com/favicon.ico" media="screen">
     <link rel="canonical" href="http://www.guazi.com/bj/">
-	<script src="{{URL::asset('/templates/js/base.js')}}"></script>
-	<script src="{{URL::asset('/templates/js/hm.js')}}"></script>
+    <script src="{{URL::asset('/templates/js/base.js')}}"></script>
+    <script src="{{URL::asset('/templates/js/hm.js')}}"></script>
     <script src="{{URL::asset('/templates/js/index.js')}}"></script>
     <script src="{{URL::asset('/templates/js/jq.js')}}"></script>
-
+    <script src="{{URL::asset('/templates/js/head2.js')}}"></script>
     <script type="text/javascript" src="{{URL::asset('/templates/myFocus')}}/js/myfocus-2.0.4.min.js"></script><!--引入myFocus库-->
     <script type="text/javascript" src="{{URL::asset('/templates/myFocus')}}/js/mf-pattern/mF_slide3D.js"></script><!--引入风格js文件-->
     <link href="{{URL::asset('/templates/myFocus')}}/js/mf-pattern/mF_slide3D.css" type="text/css" /><!--引入风格css文件-->
@@ -26,8 +26,8 @@
     <body>
 
     <!-- 引入头部 -->
-    @include('header')
-
+    @include('header') 
+ 
     <!-- 首页内容区  s -->
     <div class="index-area">
 
@@ -56,230 +56,53 @@
                 <div class="dd" id="baidu_alog">
                 <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_dazhong_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=dazhong" href="http://www.guazi.com/bj/dazhong/" class="i-dazhong" title="大众二手车">大众</a>
                 <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_toyota_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=toyota" href="http://www.guazi.com/bj/toyota/" class="i-toyota" title="丰田二手车">丰田</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_honda_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=honda" href="http://www.guazi.com/bj/honda/" class="i-honda" title="本田二手车">本田</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_benz_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=benz" href="http://www.guazi.com/bj/benz/" class="i-benz" title="奔驰二手车">奔驰</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_bmw_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=bmw" href="http://www.guazi.com/bj/bmw/" class="i-bmw" title="宝马二手车">宝马</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_audi_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=audi" href="http://www.guazi.com/bj/audi/" class="i-audi" title="奥迪二手车">奥迪</a>
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                    <span class="tip-right"></span>
+        <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_honda_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=honda" href="http://www.guazi.com/bj/honda/" class="i-honda" title="本田二手车">本田</a>
+        <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_benz_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=benz" href="http://www.guazi.com/bj/benz/" class="i-benz" title="奔驰二手车">奔驰</a>
+        <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_bmw_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=bmw" href="http://www.guazi.com/bj/bmw/" class="i-bmw" title="宝马二手车">宝马</a>
+        <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_audi_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_brand_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000024&amp;brand=audi" href="http://www.guazi.com/bj/audi/" class="i-audi" title="奥迪二手车">奥迪</a>
+         <span class="tip-right"></span>
                 </div>
                 <div class="ppmore">
                     <div class="leftline"></div>
                     <p>所有品牌</p>
-                                            <table class="tbl">
+
+           <table class="tbl">
                             <tbody>
-                                                                    <tr>
-                                        <td class="zm">A</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=audi" href="http://www.guazi.com/bj/audi/" title="奥迪二手车">奥迪</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">B</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=baojun" href="http://www.guazi.com/bj/baojun/" title="宝骏二手车">宝骏</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=bmw" href="http://www.guazi.com/bj/bmw/" title="宝马二手车">宝马</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=porsche" href="http://www.guazi.com/bj/porsche/" title="保时捷二手车">保时捷</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=beijingqiche" href="http://www.guazi.com/bj/beijingqiche/" title="北京二手车">北京</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=beiqi" href="http://www.guazi.com/bj/beiqi/" title="北汽二手车">北汽</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=benz" href="http://www.guazi.com/bj/benz/" title="奔驰二手车">奔驰</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=benteng" href="http://www.guazi.com/bj/benteng/" title="奔腾二手车">奔腾</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=honda" href="http://www.guazi.com/bj/honda/" title="本田二手车">本田</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=biaozhi" href="http://www.guazi.com/bj/biaozhi/" title="标致二手车">标致</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=buick" href="http://www.guazi.com/bj/buick/" title="别克二手车">别克</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=byd" href="http://www.guazi.com/bj/byd/" title="比亚迪二手车">比亚迪</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">C</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=changan" href="http://www.guazi.com/bj/changan/" title="长安二手车">长安</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=changanshangyong" href="http://www.guazi.com/bj/changanshangyong/" title="长安商用二手车">长安商用</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=changcheng" href="http://www.guazi.com/bj/changcheng/" title="长城二手车">长城</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=chuanqi1" href="http://www.guazi.com/bj/chuanqi1/" title="传祺二手车">传祺</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">D</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=daoqi" href="http://www.guazi.com/bj/daoqi/" title="道奇二手车">道奇</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=datong" href="http://www.guazi.com/bj/datong/" title="大通二手车">大通</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=dazhong" href="http://www.guazi.com/bj/dazhong/" title="大众二手车">大众</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=dongfengfengdu" href="http://www.guazi.com/bj/dongfengfengdu/" title="东风风度二手车">东风风度</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=dongfengfengshen" href="http://www.guazi.com/bj/dongfengfengshen/" title="东风风神二手车">东风风神</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=fengxing" href="http://www.guazi.com/bj/fengxing/" title="东风风行二手车">东风风行</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=dongfengxiaokang" href="http://www.guazi.com/bj/dongfengxiaokang/" title="东风小康二手车">东风小康</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=dongnan" href="http://www.guazi.com/bj/dongnan/" title="东南二手车">东南</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=ds" href="http://www.guazi.com/bj/ds/" title="DS二手车">DS</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">F</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=fiat" href="http://www.guazi.com/bj/fiat/" title="菲亚特二手车">菲亚特</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=toyota" href="http://www.guazi.com/bj/toyota/" title="丰田二手车">丰田</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=ford" href="http://www.guazi.com/bj/ford/" title="福特二手车">福特</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=futian" href="http://www.guazi.com/bj/futian/" title="福田二手车">福田</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">G</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=gmc" href="http://www.guazi.com/bj/gmc/" title="GMC二手车">GMC</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">H</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=hafei" href="http://www.guazi.com/bj/hafei/" title="哈飞二手车">哈飞</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=hafu" href="http://www.guazi.com/bj/hafu/" title="哈弗二手车">哈弗</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=haige" href="http://www.guazi.com/bj/haige/" title="海格二手车">海格</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=haima" href="http://www.guazi.com/bj/haima/" title="海马二手车">海马</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=hongqi" href="http://www.guazi.com/bj/hongqi/" title="红旗二手车">红旗</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=huanghai" href="http://www.guazi.com/bj/huanghai/" title="黄海二手车">黄海</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=huansu" href="http://www.guazi.com/bj/huansu/" title="幻速二手车">幻速</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=huasong" href="http://www.guazi.com/bj/huasong/" title="华颂二手车">华颂</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=huatai" href="http://www.guazi.com/bj/huatai/" title="华泰二手车">华泰</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">J</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=jeep" href="http://www.guazi.com/bj/jeep/" title="Jeep二手车">Jeep</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=jianghuai" href="http://www.guazi.com/bj/jianghuai/" title="江淮二手车">江淮</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=jiangling" href="http://www.guazi.com/bj/jiangling/" title="江铃二手车">江铃</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=jiao" href="http://www.guazi.com/bj/jiao/" title="吉奥二手车">吉奥</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=jiebao" href="http://www.guazi.com/bj/jiebao/" title="捷豹二手车">捷豹</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=jili" href="http://www.guazi.com/bj/jili/" title="吉利二手车">吉利</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=huachen" href="http://www.guazi.com/bj/huachen/" title="金杯二手车">金杯</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">K</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=cadillac" href="http://www.guazi.com/bj/cadillac/" title="凯迪拉克二手车">凯迪拉克</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=krui" href="http://www.guazi.com/bj/krui/" title="开瑞二手车">开瑞</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=chrysler" href="http://www.guazi.com/bj/chrysler/" title="克莱斯勒二手车">克莱斯勒</a>
-                                                                                    </td>
-                                    </tr>
-                                                                    <tr>
-                                        <td class="zm">L</td>
-                                        <td>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=lamborghini" href="http://www.guazi.com/bj/lamborghini/" title="兰博基尼二手车">兰博基尼</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=lexus" href="http://www.guazi.com/bj/lexus/" title="雷克萨斯二手车">雷克萨斯</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=renault" href="http://www.guazi.com/bj/renault/" title="雷诺二手车">雷诺</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=liebao" href="http://www.guazi.com/bj/liebao/" title="猎豹二手车">猎豹</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=lifan" href="http://www.guazi.com/bj/lifan/" title="力帆二手车">力帆</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=suzuki" href="http://www.guazi.com/bj/suzuki/" title="铃木二手车">铃木</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=linian" href="http://www.guazi.com/bj/linian/" title="理念二手车">理念</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=lincoln" href="http://www.guazi.com/bj/lincoln/" title="林肯二手车">林肯</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=lufeng" href="http://www.guazi.com/bj/lufeng/" title="陆风二手车">陆风</a>
-                                                                                            <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=landrover" href="http://www.guazi.com/bj/landrover/" title="路虎二手车">路虎</a>
-                                                                                    </td>
-                                    </tr>
-                                                            </tbody>
+                            @foreach($arr['brand_left'] as $key => $val)
+                            <tr>
+                                <td class="zm">{{$key}}</td>
+                                <td>
+                                    @foreach($val as  $v)
+                                    <a baidu_alog='pc_index_fastPick_brand&click&pc_index_fastPick_brand_all_c' data-gzlog="tracking_type=click&eventid=0050080000000025&brand=audi"  href="/bj/audi/" title="{{$v['brand_name']}}二手车">{{$v['brand_name']}}</a>
+                                    @endforeach
+                                </td>
+                            </tr>
+                            @endforeach
+                            </tbody>
                         </table>
-                                                <table class="tbr">
+                        <table class="tbr">
                             <tbody>
-                                                            <tr>
-                                    <td class="zm">M</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=maserati" href="http://www.guazi.com/bj/maserati/" title="玛莎拉蒂二手车">玛莎拉蒂</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=mazda" href="http://www.guazi.com/bj/mazda/" title="马自达二手车">马自达</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=mg1" href="http://www.guazi.com/bj/mg1/" title="MG二手车">MG</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=mini" href="http://www.guazi.com/bj/mini/" title="MINI二手车">MINI</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">N</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=dongfengyulongnazhijie" href="http://www.guazi.com/bj/dongfengyulongnazhijie/" title="纳智捷二手车">纳智捷</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">O</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=opel" href="http://www.guazi.com/bj/opel/" title="欧宝二手车">欧宝</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=acura" href="http://www.guazi.com/bj/acura/" title="讴歌二手车">讴歌</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">Q</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=qichen" href="http://www.guazi.com/bj/qichen/" title="启辰二手车">启辰</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=lotus" href="http://www.guazi.com/bj/lotus/" title="青年莲花二手车">青年莲花</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=chery" href="http://www.guazi.com/bj/chery/" title="奇瑞二手车">奇瑞</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=fuqiqiteng" href="http://www.guazi.com/bj/fuqiqiteng/" title="启腾二手车">启腾</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=kia" href="http://www.guazi.com/bj/kia/" title="起亚二手车">起亚</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">R</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=richan" href="http://www.guazi.com/bj/richan/" title="日产二手车">日产</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=rongwei" href="http://www.guazi.com/bj/rongwei/" title="荣威二手车">荣威</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">S</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=mitsubishi" href="http://www.guazi.com/bj/mitsubishi/" title="三菱二手车">三菱</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=shenbao" href="http://www.guazi.com/bj/shenbao/" title="绅宝二手车">绅宝</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=shuanglong" href="http://www.guazi.com/bj/shuanglong/" title="双龙二手车">双龙</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=subaru" href="http://www.guazi.com/bj/subaru/" title="斯巴鲁二手车">斯巴鲁</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=skoda" href="http://www.guazi.com/bj/skoda/" title="斯柯达二手车">斯柯达</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=smart" href="http://www.guazi.com/bj/smart/" title="Smart二手车">Smart</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">W</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=weilin" href="http://www.guazi.com/bj/weilin/" title="威麟二手车">威麟</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=weiwang" href="http://www.guazi.com/bj/weiwang/" title="威旺二手车">威旺</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=volvo" href="http://www.guazi.com/bj/volvo/" title="沃尔沃二手车">沃尔沃</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=wuling" href="http://www.guazi.com/bj/wuling/" title="五菱二手车">五菱</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">X</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=brand-xiali" href="http://www.guazi.com/bj/brand-xiali/" title="夏利二手车">夏利</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=hyundai" href="http://www.guazi.com/bj/hyundai/" title="现代二手车">现代</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=chevrolet" href="http://www.guazi.com/bj/chevrolet/" title="雪佛兰二手车">雪佛兰</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=citroen" href="http://www.guazi.com/bj/citroen/" title="雪铁龙二手车">雪铁龙</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">Y</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=chuanqiyema" href="http://www.guazi.com/bj/chuanqiyema/" title="野马二手车">野马</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=infiniti" href="http://www.guazi.com/bj/infiniti/" title="英菲尼迪二手车">英菲尼迪</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=tj-yiqi" href="http://www.guazi.com/bj/tj-yiqi/" title="一汽二手车">一汽</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=nj-iveco" href="http://www.guazi.com/bj/nj-iveco/" title="依维柯二手车">依维柯</a>
-                                                                            </td>
-                                </tr>
-                                                            <tr>
-                                    <td class="zm">Z</td>
-                                    <td>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=huachen-zhonghua" href="http://www.guazi.com/bj/huachen-zhonghua/" title="中华二手车">中华</a>
-                                                                                    <a baidu_alog="pc_index_fastPick_brand&amp;click&amp;pc_index_fastPick_brand_all_c" data-gzlog="tracking_type=click&amp;eventid=0050080000000025&amp;brand=zhongtai" href="http://www.guazi.com/bj/zhongtai/" title="众泰二手车">众泰</a>
-                                                                            </td>
-                                </tr>
-                                                        </tbody>
+                            @foreach($arr['brand_right'] as $key => $val)
+                            <tr>
+                                <td class="zm">{{$key}}</td>
+                                <td>
+                                    @foreach($val as $k => $v)
+                                    <a baidu_alog='pc_index_fastPick_brand&click&pc_index_fastPick_brand_all_c' data-gzlog="tracking_type=click&eventid=0050080000000025&brand=maserati"  href="/bj/maserati/" title="{{$v['brand_name']}}二手车">{{$v['brand_name']}}</a>
+                                    @endforeach
+                                </td>
+                            </tr>
+                            @endforeach
+                            </tbody>
                         </table>
-                                                            </div>
+ </div>
             </div>
          
             <div class="sx-price">
                 <div class="dt">价格</div>
                 <div class="dd">
-                                                                        <a baidu_alog="pc_index_fastPick_price&amp;click&amp;pc_index_fastPick_price_5_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_price_c" data-gzlog="tracking_type=click&amp;eventid=0050100000000026&amp;price_index=5" target="_blank" gjalog="100000000049000100000010" href="http://www.guazi.com/bj/buy/p3/" title="5万以下二手车">
+<a baidu_alog="pc_index_fastPick_price&amp;click&amp;dex_fastPick_price_5_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_price_c" data-gzlog="tracking_type=click&amp;eventid=0050100000000026&amp;price_index=5" target="_blank" gjalog="100000000049000100000010" href="http://www.guazi.com/bj/buy/p3/" title="5万以下二手车">
                                 5万以下                            </a>
-                                                    <a baidu_alog="pc_index_fastPick_price&amp;click&amp;pc_index_fastPick_price_5_10_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_price_c" data-gzlog="tracking_type=click&amp;eventid=0050100000000026&amp;price_index=5_10" target="_blank" gjalog="100000000049000100000010" href="http://www.guazi.com/bj/buy/p4/" title="10万以下二手车">
+<a baidu_alog="pc_index_fastPick_price&amp;click&amp;pc_index_fastPick_price_5_10_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_price_c" data-gzlog="tracking_type=click&amp;eventid=0050100000000026&amp;price_index=5_10" target="_blank" gjalog="100000000049000100000010" href="http://www.guazi.com/bj/buy/p4/" title="10万以下二手车">
                                 5-10万                            </a>
                                                     <a baidu_alog="pc_index_fastPick_price&amp;click&amp;pc_index_fastPick_price_10_15_c#pc_index_fastPick&amp;click&amp;pc_index_fastPick_price_c" data-gzlog="tracking_type=click&amp;eventid=0050100000000026&amp;price_index=10_15" target="_blank" gjalog="100000000049000100000010" href="http://www.guazi.com/bj/buy/p5/" title="15万以下二手车">
                                 10-15万                            </a>
@@ -370,14 +193,14 @@
     <div class="w
      indexTab">
     <div class="title clearfix">
-        <a baidu_alog="index_tabselect&amp;click&amp;pc_index_tabSelect_right_morecar_c" class="all-car" href="http://www.guazi.com/bj/buy/" gjalog="100000000051000100000010">查看全部&gt;&gt;</a>
-          <span class="ti-left">
+ <a baidu_alog="index_tabselect&amp;click&amp;pc_index_tabSelect_right_morecar_c" class="all-car" href="http://www.guazi.com/bj/buy/" gjalog="100000000051000100000010">查看全部&gt;&gt;</a>
+        <span class="ti-left">
             <span>热门好车</span>
-                                              <a class="on" baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_new_sale_h " href="javascript:void(0)" data-role="tabSelect" gjalog="100000000967000100000010" eventid="0080140000000032">最新上架</a>
-                                              <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_jishou_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000968000100000010" eventid="0080150000000156">降价急售</a>
-                                              <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_zhunxin_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000970000100000010" eventid="0080320000000036">准新车</a>
-                                              <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_lianshou_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000969000100000010" eventid="0080330000000038">练手车</a>
-                                              <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_suv_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000971000100000010" eventid="0080340000000040">SUV</a>
+ <a class="on" baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_new_sale_h " href="javascript:void(0)" data-role="tabSelect" gjalog="100000000967000100000010" eventid="0080140000000032">最新上架</a>
+ <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_jishou_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000968000100000010" eventid="0080150000000156">降价急售</a>
+ <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_zhunxin_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000970000100000010" eventid="0080320000000036">准新车</a>
+ <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_lianshou_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000969000100000010" eventid="0080330000000038">练手车</a>
+ <a baidu_alog="pc_index_tabSelect_detailCar&amp;mouseenter&amp;pc_index_tabSelect_detailCar_suv_h" href="javascript:void(0)" data-role="tabSelect" gjalog="100000000971000100000010" eventid="0080340000000040">SUV</a>
                         </span>
     </div>
 
@@ -2143,12 +1966,14 @@
 
    <script>
         $('#11').mouseover(function(){
-            $('.ppmore').attr('style','background-color:#fff;border:2px solid #22ac38;display:block;left:398px;padding:15px 25px;position:absolute;top:131px;width:660px;z-index:90;');
+            $('.ppmore').attr('style','background-color:#fff;border:2px solid #22ac38;display:block;left:398px;padding:15px 25px;position:absolute;top:149px;width:660px;z-index:90;');
             $('#11').attr('style','-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;border-color:#22ac38 -moz-use-text-color #22ac38 #22ac38;border-img:none;border-style:solid none solid solid;border-width:2px 0 2px 2px;margin-left:-24px;padding-left:24px;width:292px;');
-            $('.leftline').attr('style','background:#fff none repeat scroll 0 0;height:80px;left:-2px;position:absolute;top:156px;width:2px;')
+            $('.leftline').attr('style','background:#fff none repeat scroll 0 0;height:80px;left:-2px;position:absolute;top:156;width:2px;')
         })
          $('#11').mouseout(function(){
             $('.ppmore').attr('style','display:none');
              $('#11').attr('style','border-color:none');
         })
+  
     </script>
+ 
