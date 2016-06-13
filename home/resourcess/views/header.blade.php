@@ -13,7 +13,7 @@
                     </a>
 
                     <i class="maskline"></i>
-    <script src="<?php echo e(URL::asset('/templates/js/jq.js')); ?>"></script>
+    <script src="{{URL::asset('/templates/js/jq.js')}}"></script>
 <!-- 头部  e -->
     <script type="text/javascript">
         $('.c2city').mouseover(function(){

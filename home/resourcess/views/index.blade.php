@@ -14,19 +14,19 @@
     <meta name="shenma-site-verification" content="47174ef55ff6318bd3c48a846b608ee8_1446541131">
     <link rel="shortcut icon" type="image/x-icon" href="http://www.guazi.com/favicon.ico" media="screen">
     <link rel="canonical" href="http://www.guazi.com/bj/">
-	<script src="<?php echo e(URL::asset('/templates/js/base.js')); ?>"></script>
-	<script src="<?php echo e(URL::asset('/templates/js/hm.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('/templates/js/index.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('/templates/js/jq.js')); ?>"></script>
+	<script src="{{URL::asset('/templates/js/base.js')}}"></script>
+	<script src="{{URL::asset('/templates/js/hm.js')}}"></script>
+    <script src="{{URL::asset('/templates/js/index.js')}}"></script>
+    <script src="{{URL::asset('/templates/js/jq.js')}}"></script>
 
-    <script type="text/javascript" src="<?php echo e(URL::asset('/templates/myFocus')); ?>/js/myfocus-2.0.4.min.js"></script><!--引入myFocus库-->
-    <script type="text/javascript" src="<?php echo e(URL::asset('/templates/myFocus')); ?>/js/mf-pattern/mF_slide3D.js"></script><!--引入风格js文件-->
-    <link href="<?php echo e(URL::asset('/templates/myFocus')); ?>/js/mf-pattern/mF_slide3D.css" type="text/css" /><!--引入风格css文件-->
+    <script type="text/javascript" src="{{URL::asset('/templates/myFocus')}}/js/myfocus-2.0.4.min.js"></script><!--引入myFocus库-->
+    <script type="text/javascript" src="{{URL::asset('/templates/myFocus')}}/js/mf-pattern/mF_slide3D.js"></script><!--引入风格js文件-->
+    <link href="{{URL::asset('/templates/myFocus')}}/js/mf-pattern/mF_slide3D.css" type="text/css" /><!--引入风格css文件-->
 
     <body>
 
     <!-- 引入头部 -->
-    <?php echo $__env->make('header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    @include('header')
 
     <!-- 首页内容区  s -->
     <div class="index-area">
@@ -315,9 +315,9 @@
         <div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div><!--载入画面(可删除)-->
           <div class="pic"><!--内容列表(li数目可随意增减)-->
             <ul>
-                <li><a href="#"><img width="860px" height="290px" src="<?php echo e(URL::asset('/templates/images/01.jpg')); ?>" thumb=""  text="详细描述3" /></a></li>
-                <li><a href="#"><img width="860px" height="290px" src="<?php echo e(URL::asset('/templates/images/02.jpg')); ?>" thumb=""  text="详细描述4" /></a></li>
-                <li><a href="#"><img width="860px" height="290px" src="<?php echo e(URL::asset('/templates/images/03.jpg')); ?>" thumb=""  text="详细描述5" /></a></li>
+                <li><a href="#"><img width="860px" height="290px" src="{{URL::asset('/templates/images/01.jpg')}}" thumb=""  text="详细描述3" /></a></li>
+                <li><a href="#"><img width="860px" height="290px" src="{{URL::asset('/templates/images/02.jpg')}}" thumb=""  text="详细描述4" /></a></li>
+                <li><a href="#"><img width="860px" height="290px" src="{{URL::asset('/templates/images/03.jpg')}}" thumb=""  text="详细描述5" /></a></li>
 
             </ul>
           </div>
@@ -330,12 +330,12 @@
                     </li>
                     <li>
                         <a baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banenr_sub2_c' data-gzlog="tracking_type=click&eventid=0140130000000029&url=t3" href="/zq_article/t3/" target="_blank">
-                            <img src="<?php echo e(URL::asset('/templates/images/guazi_story.jpg')); ?>" alt="好车故事">
+                            <img src="{{URL::asset('/templates/images/guazi_story.jpg')}}" alt="好车故事">
                         </a>
                     </li>
                     <li>
                         <a baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banenr_sub3_c' data-gzlog="tracking_type=click&eventid=0140130000000029&url=t1" href="/zq_article/t1/" target="_blank">
-                            <img src="<?php echo e(URL::asset('/templates/images/guazi_learn.j')); ?>pg" alt="瓜子用车知识讲堂">
+                            <img src="{{URL::asset('/templates/images/guazi_learn.j')}}pg" alt="瓜子用车知识讲堂">
                         </a>
                     </li>
                 </ul>
@@ -390,7 +390,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2822627@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奔驰C级 2010款 C 180 K 1.6T 自动 经典型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145686x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/e1e74d8761cda5c76683dc54fbb49362.jpg" alt="奔驰C级 2010款 C 180 K 1.6T 自动 经典型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/e1e74d8761cda5c76683dc54fbb49362.jpg" alt="奔驰C级 2010款 C 180 K 1.6T 自动 经典型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2822627@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奔驰C级 2010款 C 180 K 1.6T 自动 经典型" href="http://www.guazi.com/bj/3000145686x.htm" target="_blank" class="info-title">奔驰C级 2010款 C 180 K 1.6T 自动 经典型</a>
@@ -411,7 +411,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2822374@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="马自达5 2011款 5 2.0 自动 豪华型(进口)" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145679x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/fcf79e047cd0089813341d57ac10a7ad.jpg" alt="马自达5 2011款 5 2.0 自动 豪华型(进口)" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/fcf79e047cd0089813341d57ac10a7ad.jpg" alt="马自达5 2011款 5 2.0 自动 豪华型(进口)" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2822374@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="马自达5 2011款 5 2.0 自动 豪华型(进口)" href="http://www.guazi.com/bj/3000145679x.htm" target="_blank" class="info-title">马自达5 2011款 5 2.0 自动 豪华型(进口)</a>
@@ -432,7 +432,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2819632@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="丰田凯美瑞 2009款 凯美瑞 2.0 自动 200G 豪华版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145663x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/0a8e2af365f8d75e2648d8241da8f86a.jpg" alt="丰田凯美瑞 2009款 凯美瑞 2.0 自动 200G 豪华版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/0a8e2af365f8d75e2648d8241da8f86a.jpg" alt="丰田凯美瑞 2009款 凯美瑞 2.0 自动 200G 豪华版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2819632@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="丰田凯美瑞 2009款 凯美瑞 2.0 自动 200G 豪华版" href="http://www.guazi.com/bj/3000145663x.htm" target="_blank" class="info-title">丰田凯美瑞 2009款 凯美瑞 2.0 自动 200G 豪华版</a>
@@ -453,7 +453,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2825061@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145656x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/a8ff72ccccc978022cb7dcad6aa9cbd3.jpg" alt="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/a8ff72ccccc978022cb7dcad6aa9cbd3.jpg" alt="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2825061@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" href="http://www.guazi.com/bj/3000145656x.htm" target="_blank" class="info-title">本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版</a>
@@ -474,7 +474,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2778891@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="荣威550S 2014款 1.8 双离合 智选版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145634x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/c1ac9ff394020100d25dde06778b67fe.jpg" alt="荣威550S 2014款 1.8 双离合 智选版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/c1ac9ff394020100d25dde06778b67fe.jpg" alt="荣威550S 2014款 1.8 双离合 智选版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2778891@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="荣威550S 2014款 1.8 双离合 智选版" href="http://www.guazi.com/bj/3000145634x.htm" target="_blank" class="info-title">荣威550S 2014款 1.8 双离合 智选版</a>
@@ -495,7 +495,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2819617@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145623x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/b44e1bc227be4cf4e3b6a7d58058e187.jpg" alt="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/b44e1bc227be4cf4e3b6a7d58058e187.jpg" alt="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2819617@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" href="http://www.guazi.com/bj/3000145623x.htm" target="_blank" class="info-title">奇瑞风云2-两厢 2014款 1.5 手动 新青款 版</a>
@@ -516,7 +516,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2760989@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="雪铁龙C2 2012款 C2 1.4 手动 运动型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145616x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/aa19451e7539a5af01a637d8b9c43a0e.jpg" alt="雪铁龙C2 2012款 C2 1.4 手动 运动型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/aa19451e7539a5af01a637d8b9c43a0e.jpg" alt="雪铁龙C2 2012款 C2 1.4 手动 运动型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2760989@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="雪铁龙C2 2012款 C2 1.4 手动 运动型" href="http://www.guazi.com/bj/3000145616x.htm" target="_blank" class="info-title">雪铁龙C2 2012款 C2 1.4 手动 运动型</a>
@@ -537,7 +537,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2822837@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="本田凌派 2013款 凌派 1.8 自动 豪华版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145579x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/2d4a69a0ea1af32f5fd2cbe1e9a179be.jpg" alt="本田凌派 2013款 凌派 1.8 自动 豪华版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/2d4a69a0ea1af32f5fd2cbe1e9a179be.jpg" alt="本田凌派 2013款 凌派 1.8 自动 豪华版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2822837@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="本田凌派 2013款 凌派 1.8 自动 豪华版" href="http://www.guazi.com/bj/3000145579x.htm" target="_blank" class="info-title">本田凌派 2013款 凌派 1.8 自动 豪华版</a>
@@ -558,7 +558,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2824697@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="铃木奥拓 2013款 1.0 手动 舒适版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145551x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/f3755c720a2669cc542bf1fa2af14b60.jpg" alt="铃木奥拓 2013款 1.0 手动 舒适版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/f3755c720a2669cc542bf1fa2af14b60.jpg" alt="铃木奥拓 2013款 1.0 手动 舒适版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2824697@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="铃木奥拓 2013款 1.0 手动 舒适版" href="http://www.guazi.com/bj/3000145551x.htm" target="_blank" class="info-title">铃木奥拓 2013款 1.0 手动 舒适版</a>
@@ -579,7 +579,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2808448@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奔驰M级 2012款 ML300" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145539x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/35c4511d215dbc7e184a4f3f707c56ef.jpg" alt="奔驰M级 2012款 ML300" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/35c4511d215dbc7e184a4f3f707c56ef.jpg" alt="奔驰M级 2012款 ML300" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2808448@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奔驰M级 2012款 ML300" href="http://www.guazi.com/bj/3000145539x.htm" target="_blank" class="info-title">奔驰M级 2012款 ML300</a>
@@ -599,7 +599,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2761852@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奔驰C级 2009款 C 200 K 1.8T 自动 时尚型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145519x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/02bd09ae73485ecb641d6bcfcf2053c0.jpg" alt="奔驰C级 2009款 C 200 K 1.8T 自动 时尚型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/02bd09ae73485ecb641d6bcfcf2053c0.jpg" alt="奔驰C级 2009款 C 200 K 1.8T 自动 时尚型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2761852@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="奔驰C级 2009款 C 200 K 1.8T 自动 时尚型" href="http://www.guazi.com/bj/3000145519x.htm" target="_blank" class="info-title">奔驰C级 2009款 C 200 K 1.8T 自动 时尚型</a>
@@ -620,7 +620,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2808895@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="大众捷达 2015款 捷达 1.6 自动 舒适型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145488x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/6bcf1d27c2a968c3471e090b350352b1.jpg" alt="大众捷达 2015款 捷达 1.6 自动 舒适型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/6bcf1d27c2a968c3471e090b350352b1.jpg" alt="大众捷达 2015款 捷达 1.6 自动 舒适型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080140000000032&amp;carid=2808895@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_new_sale_post_c" title="大众捷达 2015款 捷达 1.6 自动 舒适型" href="http://www.guazi.com/bj/3000145488x.htm" target="_blank" class="info-title">大众捷达 2015款 捷达 1.6 自动 舒适型</a>
@@ -648,7 +648,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2755796@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="雪佛兰爱唯欧-三厢 2011款 1.4 自动 SE" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144333x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/1a8f9e6da93e59001526a546279b684a.jpg" alt="雪佛兰爱唯欧-三厢 2011款 1.4 自动 SE" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/1a8f9e6da93e59001526a546279b684a.jpg" alt="雪佛兰爱唯欧-三厢 2011款 1.4 自动 SE" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -672,7 +672,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2807271@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="长安奔奔mini 2011款 1.0 自动 豪华版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143675x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/de87ce2522724cc317d398f7371b37a3.jpg" alt="长安奔奔mini 2011款 1.0 自动 豪华版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/de87ce2522724cc317d398f7371b37a3.jpg" alt="长安奔奔mini 2011款 1.0 自动 豪华版" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -696,7 +696,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2777062@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="MINIClubman 2011款 One Clubman 1.6 自动(进口)" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143655x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/67e2796c20a95a7b5ac906dda993bcec.jpg" alt="MINIClubman 2011款 One Clubman 1.6 自动(进口)" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/67e2796c20a95a7b5ac906dda993bcec.jpg" alt="MINIClubman 2011款 One Clubman 1.6 自动(进口)" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -720,7 +720,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2816899@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="宝马5系 2010款 520Li 2.0 自动 豪华型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143616x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/966c0c55431ccdcb4c02ea449e3122bd.jpg" alt="宝马5系 2010款 520Li 2.0 自动 豪华型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/966c0c55431ccdcb4c02ea449e3122bd.jpg" alt="宝马5系 2010款 520Li 2.0 自动 豪华型" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -744,7 +744,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2803234@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="MINICoupe MINI COUPE1.6l高配版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143566x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/13460ba497878beecd9b32c38504c516.jpg" alt="MINICoupe MINI COUPE1.6l高配版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/13460ba497878beecd9b32c38504c516.jpg" alt="MINICoupe MINI COUPE1.6l高配版" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -767,7 +767,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2791441@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="马自达睿翼 2011款 睿翼 2.0 自动 精英版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000142391x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/0aa1db1c85c88b803074e6465a25c6a6.jpg" alt="马自达睿翼 2011款 睿翼 2.0 自动 精英版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/0aa1db1c85c88b803074e6465a25c6a6.jpg" alt="马自达睿翼 2011款 睿翼 2.0 自动 精英版" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -791,7 +791,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2792390@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="起亚赛拉图 2010款 1.6 手动 GL" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000142134x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/c0cb23f4c9087ed38ca2069682ac01a1.jpg" alt="起亚赛拉图 2010款 1.6 手动 GL" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/c0cb23f4c9087ed38ca2069682ac01a1.jpg" alt="起亚赛拉图 2010款 1.6 手动 GL" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -815,7 +815,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2770248@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="奔驰威霆 2014款 威霆 3.0 自动 商务版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000141722x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/25da7b0dd971734e3b0124afadbda765.jpg" alt="奔驰威霆 2014款 威霆 3.0 自动 商务版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/25da7b0dd971734e3b0124afadbda765.jpg" alt="奔驰威霆 2014款 威霆 3.0 自动 商务版" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -839,7 +839,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2704442@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="丰田卡罗拉 2014款 卡罗拉 1.6 无级 GLX-i 导航版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000140902x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/a44c7e524ba81bb3a5af97b8bddae69f.jpg" alt="丰田卡罗拉 2014款 卡罗拉 1.6 无级 GLX-i 导航版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/a44c7e524ba81bb3a5af97b8bddae69f.jpg" alt="丰田卡罗拉 2014款 卡罗拉 1.6 无级 GLX-i 导航版" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -863,7 +863,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2792679@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="日产阳光 2011款 1.5 CVT 豪华版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000140785x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/2bee90eda22e9b014035f57e1dc6eec4.jpg" alt="日产阳光 2011款 1.5 CVT 豪华版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/2bee90eda22e9b014035f57e1dc6eec4.jpg" alt="日产阳光 2011款 1.5 CVT 豪华版" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -886,7 +886,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2788302@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="奔驰E级 2013款 E 300 L 3.0 自动 优雅型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000139649x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/37aa0eba4f170b36848507c6fde3516c.jpg" alt="奔驰E级 2013款 E 300 L 3.0 自动 优雅型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/37aa0eba4f170b36848507c6fde3516c.jpg" alt="奔驰E级 2013款 E 300 L 3.0 自动 优雅型" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -910,7 +910,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080150000000156&amp;carid=2779958@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_jishou_post_c" title="长安CX20 2014款 1.4 自动 天窗导航版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000139585x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/bf817c3078b46d7bb76c9df921466b27.jpg" alt="长安CX20 2014款 1.4 自动 天窗导航版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/bf817c3078b46d7bb76c9df921466b27.jpg" alt="长安CX20 2014款 1.4 自动 天窗导航版" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -942,7 +942,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2810438@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="绅宝X55 2016款 1.5T 手动 精英版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144572x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/c51cd2147a47a144d0242e89a0ae4c64.jpg" alt="绅宝X55 2016款 1.5T 手动 精英版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/c51cd2147a47a144d0242e89a0ae4c64.jpg" alt="绅宝X55 2016款 1.5T 手动 精英版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2810438@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="绅宝X55 2016款 1.5T 手动 精英版" href="http://www.guazi.com/bj/3000144572x.htm" target="_blank" class="info-title">绅宝X55 2016款 1.5T 手动 精英版</a>
@@ -963,7 +963,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2766481@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143195x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/5c80e07d5947c0d1aca053183c27d8e6.jpg" alt="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/5c80e07d5947c0d1aca053183c27d8e6.jpg" alt="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2766481@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" href="http://www.guazi.com/bj/3000143195x.htm" target="_blank" class="info-title">别克昂科拉 2015款 1.4T 自动 两驱都市精英型</a>
@@ -984,7 +984,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2518607@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="大众捷达 2015款 捷达 1.6 手动 舒适型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000141996x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/28a2640bc3b9cc2911fc7744ed1eeeb6.jpg" alt="大众捷达 2015款 捷达 1.6 手动 舒适型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/28a2640bc3b9cc2911fc7744ed1eeeb6.jpg" alt="大众捷达 2015款 捷达 1.6 手动 舒适型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2518607@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="大众捷达 2015款 捷达 1.6 手动 舒适型" href="http://www.guazi.com/bj/3000141996x.htm" target="_blank" class="info-title">大众捷达 2015款 捷达 1.6 手动 舒适型</a>
@@ -1005,7 +1005,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2786900@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="斯巴鲁BRZ 2015款 2.0 手动（进口）" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000141284x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/993a6ea5f7f5505bf61c751c176aa7bc.jpg" alt="斯巴鲁BRZ 2015款 2.0 手动（进口）" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/993a6ea5f7f5505bf61c751c176aa7bc.jpg" alt="斯巴鲁BRZ 2015款 2.0 手动（进口）" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2786900@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="斯巴鲁BRZ 2015款 2.0 手动（进口）" href="http://www.guazi.com/bj/3000141284x.htm" target="_blank" class="info-title">斯巴鲁BRZ 2015款 2.0 手动（进口）</a>
@@ -1026,7 +1026,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2781070@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="长安奔奔mini 2012款 1.0 手动 时尚版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000140930x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/fadac0a6333b8c95fa8d9bfc69b12a5c.jpg" alt="长安奔奔mini 2012款 1.0 手动 时尚版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/fadac0a6333b8c95fa8d9bfc69b12a5c.jpg" alt="长安奔奔mini 2012款 1.0 手动 时尚版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2781070@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="长安奔奔mini 2012款 1.0 手动 时尚版" href="http://www.guazi.com/bj/3000140930x.htm" target="_blank" class="info-title">长安奔奔mini 2012款 1.0 手动 时尚版</a>
@@ -1047,7 +1047,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2782312@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="开瑞K50 2015款 1.5 自动 豪华型7座" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000139776x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/54b1e3b5d0784414d3360efb5793ff0e.jpg" alt="开瑞K50 2015款 1.5 自动 豪华型7座" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/54b1e3b5d0784414d3360efb5793ff0e.jpg" alt="开瑞K50 2015款 1.5 自动 豪华型7座" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2782312@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="开瑞K50 2015款 1.5 自动 豪华型7座" href="http://www.guazi.com/bj/3000139776x.htm" target="_blank" class="info-title">开瑞K50 2015款 1.5 自动 豪华型7座</a>
@@ -1068,7 +1068,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2785779@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="别克君越 2013款 2.4 SIDI 自动 领先舒适型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000139615x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/d364e780a3b2d6fab0c73ae6a79719c7.jpg" alt="别克君越 2013款 2.4 SIDI 自动 领先舒适型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/d364e780a3b2d6fab0c73ae6a79719c7.jpg" alt="别克君越 2013款 2.4 SIDI 自动 领先舒适型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2785779@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="别克君越 2013款 2.4 SIDI 自动 领先舒适型" href="http://www.guazi.com/bj/3000139615x.htm" target="_blank" class="info-title">别克君越 2013款 2.4 SIDI 自动 领先舒适型</a>
@@ -1089,7 +1089,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2763211@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="绅宝X25 2015款 1.5 手动 舒适型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000138570x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/7a799ee71058f8b7fb5c807b9dc0f7ac.jpg" alt="绅宝X25 2015款 1.5 手动 舒适型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/7a799ee71058f8b7fb5c807b9dc0f7ac.jpg" alt="绅宝X25 2015款 1.5 手动 舒适型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2763211@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="绅宝X25 2015款 1.5 手动 舒适型" href="http://www.guazi.com/bj/3000138570x.htm" target="_blank" class="info-title">绅宝X25 2015款 1.5 手动 舒适型</a>
@@ -1110,7 +1110,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2739552@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="奥迪A3 2015款 A3 Sportback 1.4TFSI 双离合 35TFSI 百万纪念舒享型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000137705x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>387994d43a7f8194b2f33e6e1b04edb2.jpg" alt="奥迪A3 2015款 A3 Sportback 1.4TFSI 双离合 35TFSI 百万纪念舒享型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}387994d43a7f8194b2f33e6e1b04edb2.jpg" alt="奥迪A3 2015款 A3 Sportback 1.4TFSI 双离合 35TFSI 百万纪念舒享型" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -1134,7 +1134,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2764341@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="大众Polo 2014款 1.4 手动 舒适版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000137261x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/d4ee15ebbcb1379beed25e5670915e1a.jpg" alt="大众Polo 2014款 1.4 手动 舒适版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/d4ee15ebbcb1379beed25e5670915e1a.jpg" alt="大众Polo 2014款 1.4 手动 舒适版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2764341@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="大众Polo 2014款 1.4 手动 舒适版" href="http://www.guazi.com/bj/3000137261x.htm" target="_blank" class="info-title">大众Polo 2014款 1.4 手动 舒适版</a>
@@ -1155,7 +1155,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2770890@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="奔驰C级 2015款 C 200 L 2.0T 自动" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000137198x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/66a028942e7a5ac5f37b1bfebd83be23.jpg" alt="奔驰C级 2015款 C 200 L 2.0T 自动" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/66a028942e7a5ac5f37b1bfebd83be23.jpg" alt="奔驰C级 2015款 C 200 L 2.0T 自动" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2770890@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="奔驰C级 2015款 C 200 L 2.0T 自动" href="http://www.guazi.com/bj/3000137198x.htm" target="_blank" class="info-title">奔驰C级 2015款 C 200 L 2.0T 自动</a>
@@ -1176,7 +1176,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2761643@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="现代途胜 2015款 1.6T 双离合 TOP 四驱旗舰型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000136602x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/5f06ab85d509d6cfbc9c1236552b81f6.jpg" alt="现代途胜 2015款 1.6T 双离合 TOP 四驱旗舰型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/5f06ab85d509d6cfbc9c1236552b81f6.jpg" alt="现代途胜 2015款 1.6T 双离合 TOP 四驱旗舰型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080320000000036&amp;carid=2761643@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_zhunxin_post_c" title="现代途胜 2015款 1.6T 双离合 TOP 四驱旗舰型" href="http://www.guazi.com/bj/3000136602x.htm" target="_blank" class="info-title">现代途胜 2015款 1.6T 双离合 TOP 四驱旗舰型</a>
@@ -1205,7 +1205,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2819617@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145623x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/b44e1bc227be4cf4e3b6a7d58058e187.jpg" alt="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/b44e1bc227be4cf4e3b6a7d58058e187.jpg" alt="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2819617@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="奇瑞风云2-两厢 2014款 1.5 手动 新青款 版" href="http://www.guazi.com/bj/3000145623x.htm" target="_blank" class="info-title">奇瑞风云2-两厢 2014款 1.5 手动 新青款 版</a>
@@ -1226,7 +1226,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2760989@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="雪铁龙C2 2012款 C2 1.4 手动 运动型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145616x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/aa19451e7539a5af01a637d8b9c43a0e.jpg" alt="雪铁龙C2 2012款 C2 1.4 手动 运动型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/aa19451e7539a5af01a637d8b9c43a0e.jpg" alt="雪铁龙C2 2012款 C2 1.4 手动 运动型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2760989@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="雪铁龙C2 2012款 C2 1.4 手动 运动型" href="http://www.guazi.com/bj/3000145616x.htm" target="_blank" class="info-title">雪铁龙C2 2012款 C2 1.4 手动 运动型</a>
@@ -1247,7 +1247,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2824697@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="铃木奥拓 2013款 1.0 手动 舒适版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145551x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/f3755c720a2669cc542bf1fa2af14b60.jpg" alt="铃木奥拓 2013款 1.0 手动 舒适版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/f3755c720a2669cc542bf1fa2af14b60.jpg" alt="铃木奥拓 2013款 1.0 手动 舒适版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2824697@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="铃木奥拓 2013款 1.0 手动 舒适版" href="http://www.guazi.com/bj/3000145551x.htm" target="_blank" class="info-title">铃木奥拓 2013款 1.0 手动 舒适版</a>
@@ -1268,7 +1268,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2817016@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="铃木奥拓 2013款 1.0 手动 豪华版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144497x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/954e94dee641a80fbeaa02d3ada43df5.jpg" alt="铃木奥拓 2013款 1.0 手动 豪华版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/954e94dee641a80fbeaa02d3ada43df5.jpg" alt="铃木奥拓 2013款 1.0 手动 豪华版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2817016@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="铃木奥拓 2013款 1.0 手动 豪华版" href="http://www.guazi.com/bj/3000144497x.htm" target="_blank" class="info-title">铃木奥拓 2013款 1.0 手动 豪华版</a>
@@ -1289,7 +1289,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2755796@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="雪佛兰爱唯欧-三厢 2011款 1.4 自动 SE" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144333x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/1a8f9e6da93e59001526a546279b684a.jpg" alt="雪佛兰爱唯欧-三厢 2011款 1.4 自动 SE" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/1a8f9e6da93e59001526a546279b684a.jpg" alt="雪佛兰爱唯欧-三厢 2011款 1.4 自动 SE" height="194" width="290">
                                                                                                             <i class="sup-yellow">
                                             降价<br>急售                                        </i>
                                                                                                 </a>
@@ -1313,7 +1313,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2817958@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="奇瑞E5 2011款 1.5 手动 优悦版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144184x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/35b98000a3448848a970d44dbac48167.jpg" alt="奇瑞E5 2011款 1.5 手动 优悦版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/35b98000a3448848a970d44dbac48167.jpg" alt="奇瑞E5 2011款 1.5 手动 优悦版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2817958@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="奇瑞E5 2011款 1.5 手动 优悦版" href="http://www.guazi.com/bj/3000144184x.htm" target="_blank" class="info-title">奇瑞E5 2011款 1.5 手动 优悦版</a>
@@ -1334,7 +1334,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2778429@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="奇瑞旗云1 2011款 1.0 手动 标准型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144160x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/fbb4ca9b71c0e581dab65a0f4092d526.jpg" alt="奇瑞旗云1 2011款 1.0 手动 标准型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/fbb4ca9b71c0e581dab65a0f4092d526.jpg" alt="奇瑞旗云1 2011款 1.0 手动 标准型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2778429@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="奇瑞旗云1 2011款 1.0 手动 标准型" href="http://www.guazi.com/bj/3000144160x.htm" target="_blank" class="info-title">奇瑞旗云1 2011款 1.0 手动 标准型</a>
@@ -1354,7 +1354,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2742470@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="铃木奥拓 2009款 1.0 手动 豪华版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144145x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/b0f78c3a9e137f9966fe17af50381116.jpg" alt="铃木奥拓 2009款 1.0 手动 豪华版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/b0f78c3a9e137f9966fe17af50381116.jpg" alt="铃木奥拓 2009款 1.0 手动 豪华版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2742470@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="铃木奥拓 2009款 1.0 手动 豪华版" href="http://www.guazi.com/bj/3000144145x.htm" target="_blank" class="info-title">铃木奥拓 2009款 1.0 手动 豪华版</a>
@@ -1375,7 +1375,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2807632@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="比亚迪L3 2012款 1.5 手动 舒适型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144006x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/c6975749c6858802b84476cb50f29b6f.jpg" alt="比亚迪L3 2012款 1.5 手动 舒适型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/c6975749c6858802b84476cb50f29b6f.jpg" alt="比亚迪L3 2012款 1.5 手动 舒适型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2807632@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="比亚迪L3 2012款 1.5 手动 舒适型" href="http://www.guazi.com/bj/3000144006x.htm" target="_blank" class="info-title">比亚迪L3 2012款 1.5 手动 舒适型</a>
@@ -1396,7 +1396,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2798226@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="雪佛兰乐风 2008款 1.6 手动 SX SVP活力版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143979x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/97b2a2f3442c9e9a42f7e5b727aebb89.jpg" alt="雪佛兰乐风 2008款 1.6 手动 SX SVP活力版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/97b2a2f3442c9e9a42f7e5b727aebb89.jpg" alt="雪佛兰乐风 2008款 1.6 手动 SX SVP活力版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2798226@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="雪佛兰乐风 2008款 1.6 手动 SX SVP活力版" href="http://www.guazi.com/bj/3000143979x.htm" target="_blank" class="info-title">雪佛兰乐风 2008款 1.6 手动 SX SVP活力版</a>
@@ -1417,7 +1417,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2808139@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="比亚迪G6 2013款 1.5T 手动 尊贵型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143904x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/9e089543ce804957545dad31b94a22fb.jpg" alt="比亚迪G6 2013款 1.5T 手动 尊贵型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/9e089543ce804957545dad31b94a22fb.jpg" alt="比亚迪G6 2013款 1.5T 手动 尊贵型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2808139@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="比亚迪G6 2013款 1.5T 手动 尊贵型" href="http://www.guazi.com/bj/3000143904x.htm" target="_blank" class="info-title">比亚迪G6 2013款 1.5T 手动 尊贵型</a>
@@ -1438,7 +1438,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2809214@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="斯柯达晶锐 2008款 晶锐 1.4 手动 晶致版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143810x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/a71b495b873e297c5120ba8fc7651864.jpg" alt="斯柯达晶锐 2008款 晶锐 1.4 手动 晶致版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/a71b495b873e297c5120ba8fc7651864.jpg" alt="斯柯达晶锐 2008款 晶锐 1.4 手动 晶致版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080330000000038&amp;carid=2809214@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_lianshou_post_c" title="斯柯达晶锐 2008款 晶锐 1.4 手动 晶致版" href="http://www.guazi.com/bj/3000143810x.htm" target="_blank" class="info-title">斯柯达晶锐 2008款 晶锐 1.4 手动 晶致版</a>
@@ -1467,7 +1467,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2825061@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000145656x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/a8ff72ccccc978022cb7dcad6aa9cbd3.jpg" alt="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/a8ff72ccccc978022cb7dcad6aa9cbd3.jpg" alt="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2825061@0" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版" href="http://www.guazi.com/bj/3000145656x.htm" target="_blank" class="info-title">本田CR-V 2010款 CR-V 2.0 自动 EXi 经典版</a>
@@ -1488,7 +1488,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2809694@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="现代ix35 2010款 2.0 自动 GLS 四驱尊贵型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144667x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/8c48d3d3e278749f1737f5383509e871.jpg" alt="现代ix35 2010款 2.0 自动 GLS 四驱尊贵型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/8c48d3d3e278749f1737f5383509e871.jpg" alt="现代ix35 2010款 2.0 自动 GLS 四驱尊贵型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2809694@1" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="现代ix35 2010款 2.0 自动 GLS 四驱尊贵型" href="http://www.guazi.com/bj/3000144667x.htm" target="_blank" class="info-title">现代ix35 2010款 2.0 自动 GLS 四驱尊贵型</a>
@@ -1509,7 +1509,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2810438@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="绅宝X55 2016款 1.5T 手动 精英版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144572x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/c51cd2147a47a144d0242e89a0ae4c64.jpg" alt="绅宝X55 2016款 1.5T 手动 精英版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/c51cd2147a47a144d0242e89a0ae4c64.jpg" alt="绅宝X55 2016款 1.5T 手动 精英版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2810438@2" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="绅宝X55 2016款 1.5T 手动 精英版" href="http://www.guazi.com/bj/3000144572x.htm" target="_blank" class="info-title">绅宝X55 2016款 1.5T 手动 精英版</a>
@@ -1530,7 +1530,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2809447@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="丰田普拉多 2014款 普拉多 4.0 自动 TX-L" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000144175x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/dc46a3117eda646d85fc03be67d80250.jpg" alt="丰田普拉多 2014款 普拉多 4.0 自动 TX-L" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/dc46a3117eda646d85fc03be67d80250.jpg" alt="丰田普拉多 2014款 普拉多 4.0 自动 TX-L" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2809447@3" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="丰田普拉多 2014款 普拉多 4.0 自动 TX-L" href="http://www.guazi.com/bj/3000144175x.htm" target="_blank" class="info-title">丰田普拉多 2014款 普拉多 4.0 自动 TX-L</a>
@@ -1551,7 +1551,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2810124@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="丰田汉兰达 2012款 汉兰达 3.5 自动 四驱7座至尊版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143745x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/57eb06294c1589c42ccef76029ae373d.jpg" alt="丰田汉兰达 2012款 汉兰达 3.5 自动 四驱7座至尊版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/57eb06294c1589c42ccef76029ae373d.jpg" alt="丰田汉兰达 2012款 汉兰达 3.5 自动 四驱7座至尊版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2810124@4" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="丰田汉兰达 2012款 汉兰达 3.5 自动 四驱7座至尊版" href="http://www.guazi.com/bj/3000143745x.htm" target="_blank" class="info-title">丰田汉兰达 2012款 汉兰达 3.5 自动 四驱7座至尊版</a>
@@ -1572,7 +1572,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2805617@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="路虎发现4 2015款 发现4 3.0T 自动 V6 SC SE（进口）" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143690x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/7fb39de14f3a624e38471722e2e69e8e.jpg" alt="路虎发现4 2015款 发现4 3.0T 自动 V6 SC SE（进口）" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/7fb39de14f3a624e38471722e2e69e8e.jpg" alt="路虎发现4 2015款 发现4 3.0T 自动 V6 SC SE（进口）" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2805617@5" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="路虎发现4 2015款 发现4 3.0T 自动 V6 SC SE（进口）" href="http://www.guazi.com/bj/3000143690x.htm" target="_blank" class="info-title">路虎发现4 2015款 发现4 3.0T 自动 V6 SC SE（进口）</a>
@@ -1593,7 +1593,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2766481@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000143195x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/5c80e07d5947c0d1aca053183c27d8e6.jpg" alt="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/5c80e07d5947c0d1aca053183c27d8e6.jpg" alt="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2766481@6" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="别克昂科拉 2015款 1.4T 自动 两驱都市精英型" href="http://www.guazi.com/bj/3000143195x.htm" target="_blank" class="info-title">别克昂科拉 2015款 1.4T 自动 两驱都市精英型</a>
@@ -1614,7 +1614,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2796745@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="奥迪Q3 2013款 Q3 2.0TFSI 双离合 35TFSI 进取型" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000142651x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/9fa62a39852df9d0ba6d2b7cad137ad7.jpg" alt="奥迪Q3 2013款 Q3 2.0TFSI 双离合 35TFSI 进取型" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/9fa62a39852df9d0ba6d2b7cad137ad7.jpg" alt="奥迪Q3 2013款 Q3 2.0TFSI 双离合 35TFSI 进取型" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2796745@7" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="奥迪Q3 2013款 Q3 2.0TFSI 双离合 35TFSI 进取型" href="http://www.guazi.com/bj/3000142651x.htm" target="_blank" class="info-title">奥迪Q3 2013款 Q3 2.0TFSI 双离合 35TFSI 进取型</a>
@@ -1635,7 +1635,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2786308@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="宝马X3 2009款 X3 xDrive25i 2.5 自动 豪华增配型(进口)" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000142284x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/9d48399cd98d7a03f07ad3a0ba325cc3.jpg" alt="宝马X3 2009款 X3 xDrive25i 2.5 自动 豪华增配型(进口)" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/9d48399cd98d7a03f07ad3a0ba325cc3.jpg" alt="宝马X3 2009款 X3 xDrive25i 2.5 自动 豪华增配型(进口)" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2786308@8" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="宝马X3 2009款 X3 xDrive25i 2.5 自动 豪华增配型(进口)" href="http://www.guazi.com/bj/3000142284x.htm" target="_blank" class="info-title">宝马X3 2009款 X3 xDrive25i 2.5 自动 豪华增配型(进口)</a>
@@ -1656,7 +1656,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2793750@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="长城M4 2012款 1.5 手动 两驱舒适版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000141977x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/9f3277b2124ac03a7f04f986db463189.jpg" alt="长城M4 2012款 1.5 手动 两驱舒适版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/9f3277b2124ac03a7f04f986db463189.jpg" alt="长城M4 2012款 1.5 手动 两驱舒适版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2793750@9" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="长城M4 2012款 1.5 手动 两驱舒适版" href="http://www.guazi.com/bj/3000141977x.htm" target="_blank" class="info-title">长城M4 2012款 1.5 手动 两驱舒适版</a>
@@ -1677,7 +1677,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2785377@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="起亚索兰托 2012款 2.4 自动 5座汽油豪华版(进口)" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000141896x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/ae3b9bac459b110770e038efe925d132.jpg" alt="起亚索兰托 2012款 2.4 自动 5座汽油豪华版(进口)" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/ae3b9bac459b110770e038efe925d132.jpg" alt="起亚索兰托 2012款 2.4 自动 5座汽油豪华版(进口)" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2785377@10" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="起亚索兰托 2012款 2.4 自动 5座汽油豪华版(进口)" href="http://www.guazi.com/bj/3000141896x.htm" target="_blank" class="info-title">起亚索兰托 2012款 2.4 自动 5座汽油豪华版(进口)</a>
@@ -1698,7 +1698,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2702172@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="本田CR-V 2010款 CR-V 2.0 自动 LXi 都市版" target="_blank" class="imgtype" href="http://www.guazi.com/bj/3000141890x.htm">
-                                <img src="<?php echo e(URL::asset('/templates/images')); ?>/be5dbe4547510bbd50cacaf66dc9fd01.jpg" alt="本田CR-V 2010款 CR-V 2.0 自动 LXi 都市版" height="194" width="290">
+                                <img src="{{URL::asset('/templates/images')}}/be5dbe4547510bbd50cacaf66dc9fd01.jpg" alt="本田CR-V 2010款 CR-V 2.0 自动 LXi 都市版" height="194" width="290">
                                                                                                                                 </a>
                             <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&amp;eventid=0080340000000040&amp;carid=2702172@11" baidu_alog="pc_index_tabSelect_detailCar&amp;click&amp;pc_index_tabSelect_suv_post_c" title="本田CR-V 2010款 CR-V 2.0 自动 LXi 都市版" href="http://www.guazi.com/bj/3000141890x.htm" target="_blank" class="info-title">本田CR-V 2010款 CR-V 2.0 自动 LXi 都市版</a>
@@ -1747,35 +1747,35 @@
                 
                                     <li baidu_alog="banner&amp;&amp;click&amp;&amp;index_yunying_bottom_banner_2">
                     <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=audi" href="http://www.guazi.com/zq_audi/?domain=bj" target="_blank">
-                        <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_audi.jpg" alt="audi">
+                        <img src="{{URL::asset('/templates/images')}}/zq_audi.jpg" alt="audi">
                     </a>
                 </li><li baidu_alog="banner&amp;&amp;click&amp;&amp;index_yunying_bottom_banner_3">
                         <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=Jeep" href="http://www.guazi.com/zq_Jeep/?domain=bj" target="_blank">
-                            <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_Jeep.jpg" alt="Jeep">
+                            <img src="{{URL::asset('/templates/images')}}/zq_Jeep.jpg" alt="Jeep">
                         </a>
                     </li><li baidu_alog="pc_index_buttom_banner&amp;click&amp;index_yunying_bottom_Racing_banner_c">
                         <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=Racing" href="http://www.guazi.com/zq_Racing/?domain=bj" target="_blank">
-                            <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_racing.jpg" alt="Racing">
+                            <img src="{{URL::asset('/templates/images')}}/zq_racing.jpg" alt="Racing">
                         </a>
                     </li><li baidu_alog="pc_index_buttom_banner&amp;click&amp;index_yunying_bottom_tianlai">
                     <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=tianlai" href="http://www.guazi.com/zq_tianlai/?domain=bj" target="_blank">
-                        <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_tianlai.jpg" alt="tianlai">
+                        <img src="{{URL::asset('/templates/images')}}/zq_tianlai.jpg" alt="tianlai">
                     </a>
                 </li><li baidu_alog="pc_index_buttom_banner&amp;click&amp;index_yunying_bottom_offroad_banner_c">
                         <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=offroad" href="http://www.guazi.com/zq_offroad/?domain=bj" target="_blank">
-                            <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_offroad_1.jpg" alt="offroad">
+                            <img src="{{URL::asset('/templates/images')}}/zq_offroad_1.jpg" alt="offroad">
                         </a>
                     </li><li baidu_alog="banner&amp;&amp;click&amp;&amp;index_yunying_bottom_banner_4">
                     <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=Hyundai" href="http://www.guazi.com/zq_Hyundai/?domain=bj" target="_blank">
-                        <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_hyundai_1.jpg" alt="Hyundai">
+                        <img src="{{URL::asset('/templates/images')}}/zq_hyundai_1.jpg" alt="Hyundai">
                     </a>
                 </li><li baidu_alog="banner&amp;&amp;click&amp;&amp;index_yunying_bottom_banner_6">
                         <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=lowpowered" href="http://www.guazi.com/zq_lowpowered/?domain=bj" target="_blank">
-                            <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_lowpowered_1.jpg" alt="loan">
+                            <img src="{{URL::asset('/templates/images')}}/zq_lowpowered_1.jpg" alt="loan">
                         </a>
                     </li><li baidu_alog="banner&amp;&amp;click&amp;&amp;index_yunying_bottom_banner_5">
                     <a data-gzlog="tracking_type=click&amp;eventid=0150160000000042&amp;url=loan" href="http://www.guazi.com/zq_loan/?domain=bj" target="_blank">
-                        <img src="<?php echo e(URL::asset('/templates/images')); ?>/zq_loan.jpg" alt="loan">
+                        <img src="{{URL::asset('/templates/images')}}/zq_loan.jpg" alt="loan">
                     </a>
                 </li>
                             </ul>
@@ -1809,7 +1809,7 @@
 <!-- 首页内容区  e -->
 
 <!-- 底部  s -->
-    <?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    @include('footer')
     <!--seo 链接 -->
     <div class="friendly-link">
     <p class="link-tit">热门品牌：</p>

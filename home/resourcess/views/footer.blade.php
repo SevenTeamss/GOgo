@@ -23,7 +23,7 @@
         <p class="arc-info">Copyright 2016 www.guazi.com All Rights Reserved</p>
         <p class="arc-info">京ICP备15053955号  ICP证151071号 </p>
         <div style="width:300px;margin:0 auto; padding:20px 0;">
-            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020161" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="<?php echo e(URL::asset('/templates')); ?>/images/ghs.png" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802020161号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020161" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="{{URL::asset('/templates')}}/images/ghs.png" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802020161号</p></a>
         </div>
     </div>
 </div>
