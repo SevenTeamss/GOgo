@@ -6,6 +6,7 @@ use Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Car;
+use App\Brand;
 class SearchController extends Controller
 {
     /**
@@ -25,6 +26,17 @@ class SearchController extends Controller
                 echo 1;
         }
     }
-
+    //查询品牌对应的ID
+    public function selbrandid()
+    {
+        // 接收传递的城市名称
+        $brand_name = Request::get('brand_id');
+        // echo $brand_name;die; 
+        //实例化车辆表的model
+        $brand = new Brand();
+        $arr = $brand->BrandId($brand_name);
+        print_r($arr);
+        
+    }
 
 }

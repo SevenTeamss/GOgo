@@ -16,10 +16,12 @@ Route::get('index','IndexController@Index');
 	//我要买车
 	Route::get('buy','IndexController@Buy');
 	//我要卖车
-	Route::get('sell','IndexController@Sell');
+	Route::get('sell','SellController@Sell');
 	//服务保障
 	Route::get('server','IndexController@Server');
 	//分期购车
 	Route::get('common','IndexController@Common');
 	//首页搜索城市车辆信息
 	Route::get('buyCitySearch','SearchController@CitySearch');
+		//查询车辆的品牌ID
+	Route::get('selbrandid','SearchController@selbrandid');

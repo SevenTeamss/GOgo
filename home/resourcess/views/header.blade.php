@@ -18,7 +18,8 @@
                     </a>
 
                     <i class="maskline"></i>
-    <script src="{{URL::asset('/templates/js/jq.js')}}"></script>
+
+<script src="{{URL::asset('/templates/js/jq.js')}}"></script>
    
 <!-- 头部  e -->
     <script type="text/javascript">
@@ -33,12 +34,6 @@
 
                         <div class="all-city" >
 
-<dl>
-<dt>周边</dt>
-<dd>
-
-<a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=tj" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/tj/" title="天津二手车">天津</a><a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=tangshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/tangshan/" title="唐山二手车">唐山</a><a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=sjz" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/sjz/" title="石家庄二手车">石家庄</a><a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=qinhuangdao" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/qinhuangdao/" title="秦皇岛二手车">秦皇岛</a><a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=xingtai" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/xingtai/" title="邢台二手车">邢台</a><a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=chengde" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/chengde/" title="承德二手车">承德</a><a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=hengshui" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/hengshui/" title="衡水二手车">衡水</a><a data-gzlog="tracking_type=click&amp;eventid=0020060000000018&amp;select_city=langfang" baidu_alog="pc_index_city&amp;click&amp;pc_index_around_city_c" href="http://www.guazi.com/langfang/" title="廊坊二手车">廊坊</a>                                    </dd>
-</dl>
 
 <dl>
 <dt>热门</dt>
@@ -88,15 +83,21 @@
             <!--头部搜索框 -->
             <div class="search-box">
                 <div class="suggestion_widget" data-default-count="0">
-                    <input class="search-input js_search_input_index" placeholder="请输入要买的品牌、车型" baidu_alog="pc_index_search&amp;&amp;input&amp;&amp;index_fastpick_input_search" data-role="keywordInput" name="keyword" autocomplete="off" data-domain="bj" type="text">
-                    <button class="search-btn" data-gzlog="tracking_type=click&amp;eventid=0020070000000022" baidu_alog="pc_index_search&amp;click&amp;pc_index_search_rementuijian_c">搜索</button>
+                    <input class="search-input js_search_input_index" placeholder="请输入要买的品牌、车型" baidu_alog="pc_index_search&amp;&amp;input&amp;&amp;index_fastpick_input_search" data-role="keywordInput" name="keyword" autocomplete="off" data-domain="bj" type="text"  list='list' id='ss'>
+                      <datalist id='list'>
+                        <option value=""><span>热门推荐</span></option>
+                        @foreach($arr['hotbrand'] as $v)
+                        <option value="{{$v['brand_name']}}">{{$v['brand_name']}}</option>
+                        @endforeach
+                     </datalist>
+                    <button id="s" class="search-btn" data-gzlog="tracking_type=click&amp;eventid=0020070000000022" baidu_alog="pc_index_search&amp;click&amp;pc_index_search_rementuijian_c" onclick="search()">搜索</button>
                     <input value="bj" name="hiddenCity" type="hidden">
                 </div>
             </div>
         </div>
 
         <!-- menu s-->
-                        <div class="nav">
+        <div class="nav">
             <div class="w">
                 <a class="fr " baidu_alog="pc_index_top_tab&amp;click&amp;pc_index_top_tab_appdownload_c" target="_blank" href="http://www.guazi.com/zq_app/" data-gzlog="tracking_type=click&amp;eventid=0010190000000012" title="瓜子二手车直卖网APP">APP下载</a>
                 <a class="fr " baidu_alog="pc_index_top_tab&amp;click&amp;pc_index_top_tab_carfina_c" href="common" data-gzlog="tracking_type=click&amp;eventid=0010000000000011" title="二手车分期付款">分期购车</a>
@@ -120,6 +121,21 @@
                     {
                         history.go(0);
                     };
+            })
+          }
+          function search()
+          {
+              var brand = $('#ss').val();
+              // alert(brand);
+              var url = "selbrandid";
+              var data = {brand_id:brand};
+              $.get(url,data,function(msg){
+                alert(msg);
+                // if (msg==1) 
+                //     {
+                //         history.go('buy')
+                //     };
+
             })
           }
     </script>
